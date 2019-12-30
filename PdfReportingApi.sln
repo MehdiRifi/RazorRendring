@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfReportingApi", "PdfReportingApi\PdfReportingApi.csproj", "{1F7F9341-026D-4FED-80DA-11953700B2B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorRendering", "RazorRendering\RazorRendering.csproj", "{6B0FD1FB-E521-4A7F-8E1D-8E30EBA8E4E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1F7F9341-026D-4FED-80DA-11953700B2B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F7F9341-026D-4FED-80DA-11953700B2B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F7F9341-026D-4FED-80DA-11953700B2B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B0FD1FB-E521-4A7F-8E1D-8E30EBA8E4E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B0FD1FB-E521-4A7F-8E1D-8E30EBA8E4E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B0FD1FB-E521-4A7F-8E1D-8E30EBA8E4E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B0FD1FB-E521-4A7F-8E1D-8E30EBA8E4E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

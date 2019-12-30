@@ -16,21 +16,16 @@ namespace PdfReportingApi.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        private readonly IViewRender _viewRender;
         private readonly IWebHostEnvironment _hostingEnvironment;
 
 
-        public WeatherForecastController(IViewRender viewRender,IWebHostEnvironment hostingEnvironment)
-        {
-            _viewRender = viewRender;
-            _hostingEnvironment = hostingEnvironment;
-        }
-
+   
         [HttpGet]
 
         public async Task<IActionResult> Get()
         {
-            string html = await _viewRender.RenderAsync("khedama", new TDto { Name="Mehdi Rifi"});
+            //var test = new ServiceTest(_viewRender);
+            //string result= await test.Parse("khedama");
             return Ok();
         }
     }
