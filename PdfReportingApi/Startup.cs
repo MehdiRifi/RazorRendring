@@ -38,7 +38,7 @@ namespace PdfReportingApi
         public IConfigurationRoot Configuration { get; private set; }
         public void ConfigureContainer(ContainerBuilder builder)
         {
-            builder.RegisterModule(new DIModule());
+            builder.RegisterModule(new RazorRendringModule());
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

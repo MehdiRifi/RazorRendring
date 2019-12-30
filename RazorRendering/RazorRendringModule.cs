@@ -8,7 +8,7 @@ using System.Text;
 
 namespace RazorRendering
 {
-    public class DIModule : Module
+    public class RazorRendringModule : Module
     {
         protected override void Load(ContainerBuilder builder)
         {
