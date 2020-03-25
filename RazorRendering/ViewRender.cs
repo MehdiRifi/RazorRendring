@@ -72,18 +72,5 @@ namespace RazorRendering
                 return output.ToString();
             }
         }
-
-        private ActionContext GetActionContext()
-        {
-            var httpContext = new DefaultHttpContext { RequestServices = _serviceProvider };
-            return new ActionContext(httpContext, new RouteData(), new ActionDescriptor());
-        }
-    }
-
-    public interface IViewRender
-    {
-        Task<string> RenderAsync(string name);
-
-        Task<string> RenderAsync<TModel>(string name, TModel model);
     }
 }
