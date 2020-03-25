@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.ViewEngines;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Routing;
 
@@ -45,7 +46,9 @@ namespace RazorRendering
 
             if (!viewEngineResult.Success)
             {
-                throw new InvalidOperationException(string.Format("Couldn't find view '{0}'", name));
+                viewEngineResult = _viewEngine.GetView(name, name, false);
+                if (!viewEngineResult.Success)
+                    throw new InvalidOperationException(string.Format("Couldn't find view '{0}'", name));
             }
 
             var view = viewEngineResult.View;
