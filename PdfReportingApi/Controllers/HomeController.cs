@@ -14,13 +14,10 @@ namespace PdfReportingApi.Controllers
     public class HomeController:ControllerBase
     {
         private readonly IViewRender _viewRender;
-        private readonly IWebHostEnvironment _hostingEnvironment;
 
 
-        public HomeController(IViewRender viewRender, IWebHostEnvironment hostingEnvironment)
         {
             _viewRender = viewRender;
-            _hostingEnvironment = hostingEnvironment;
         }
 
 
@@ -28,8 +25,6 @@ namespace PdfReportingApi.Controllers
 
         public async Task<IActionResult> Get()
         {
-            var test = _viewRender.RenderAsync("test");
-            return Ok();
         }
     }
 }
