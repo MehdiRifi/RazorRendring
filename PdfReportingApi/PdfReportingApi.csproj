@@ -25,5 +25,6 @@
 
   <ItemGroup>
     <Folder Include="Views\Heros\" />
+    <Folder Include="Resources\" />
   </ItemGroup>
 </Project>
