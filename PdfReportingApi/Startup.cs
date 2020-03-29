@@ -13,8 +13,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using PdfReporting;
 using RazorRendering;
+using HtmlPdfGen;
 
 namespace PdfReportingApi
 {
@@ -39,6 +39,7 @@ namespace PdfReportingApi
         public void ConfigureContainer(ContainerBuilder builder)
         {
             builder.RegisterModule(new RazorRendringModule());
+            builder.RegisterModule(new PdfGenModule());
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

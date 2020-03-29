@@ -8,6 +8,7 @@ using System.Text;
 
 namespace RazorRendering
 {
+    //DI registration module
     public class RazorRendringModule : Module
     {
         protected override void Load(ContainerBuilder builder)
